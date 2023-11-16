@@ -10,6 +10,7 @@ body {
   color: black;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 10rem;
 }
 
 header h2 {
@@ -31,7 +32,7 @@ ul > li {
   gap: 2rem;
 }
 
-ul li:first-of-type {
+.projects li {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
