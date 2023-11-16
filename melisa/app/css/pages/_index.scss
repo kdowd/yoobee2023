@@ -1,0 +1,229 @@
+$green-color: rgb(119, 166, 130);
+$mid-green-color: rgb(91, 129, 99);
+$light-green-color: rgb(191, 218, 197);
+$dark-green-color: rgb(55, 86, 66);
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.intro-nav {
+    background-color: $green-color;
+    width: 100vw;
+}
+.intro-help {
+  padding: 20px;
+}
+
+.intro-help a:hover {
+  color: $dark-green-color;
+  transition: all 0.5s;
+}
+
+.help-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.dropdown-text {
+    background-color: $mid-green-color;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    min-width: 140px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: $green-color;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:white;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 19px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: $mid-green-color;
+    transition: all 0.5s;
+  }
+  
+  .dropdown:hover .dropdown-text {
+    background-color: $dark-green-color;
+    transition: all 0.5s;
+  }
+
+.intro-main {
+    background-image: url("../images/main-img.jpg");
+    width: 100vw;
+    height: 50vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .white-box {
+        width: 20vw;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .logo-intro {
+        width: 20vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.intro-text {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  width: 85vw;
+  p {
+    font-size: 18px;
+  }
+  .header {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .small-text {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .table-form {
+    background-color:rgb(235, 232, 232);
+    padding: 30px;
+    border-radius: 3px;
+  }
+  label {
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  input {
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 3px;
+  }
+  .number {
+    max-width: 50px;
+    text-align: center;
+  }
+  .name {
+    max-width: 100px;
+  }
+  .submit {
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin: 0 15px;
+    background-color: $green-color;
+    border: 1px solid $mid-green-color;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+
+  .submit:hover {
+    background-color: $mid-green-color;
+    border: 1px solid $dark-green-color;
+    transition: all 0.5s;
+  }
+}
+
+.modal1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding-top: 120px;
+}
+
+.modal-help {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  width: 65vw;
+  padding: 40px;
+ }
+
+ .modal-help-text {
+   margin-bottom: 25px;
+ }
+
+ .modal-header {
+   color: $green-color;
+   font-size: 35px;
+   font-weight: 800;
+   line-height: 40px;
+   text-align: center;
+ }
+ .modal-head-under {
+   font-size: 22px;
+   margin-top: 10px;
+   padding-bottom: 20px;
+   border-bottom: 2px solid $green-color;
+   text-align: center;
+   margin-bottom: 5px;
+ }
+
+ .help-sub-head {
+  color: $green-color;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 20px; 
+ }
+
+ .help-tasks {
+   line-height: 40px;
+   font-size: 18px;
+ }
+
+ .help-sml {
+   font-size: 15px;
+   margin-top: 5px;
+ }

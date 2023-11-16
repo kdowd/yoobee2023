@@ -1,0 +1,243 @@
+.home {
+  color: white;
+  background-image: url(../imgs/01-home-bg.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+.home section:last-child {
+  margin-top: auto;
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home section:nth-child(2) {
+  margin-top: 70%;
+}
+
+.home-menu {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 35px;
+  padding-top: 30px;
+}
+
+.home-menu h1 {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.home-menu #menu-btn {
+  color: white;
+}
+
+.home-menu .material-icons {
+  font-size: 37px;
+}
+
+.calenda-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 81.3%;
+  height: 24vh;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: brightness(14px);
+          backdrop-filter: brightness(14px);
+  border-radius: 12px;
+  border: 3px solid white;
+}
+
+.calenda-wrapper .litepicker-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 60px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  z-index: 999;
+}
+
+.calenda-wrapper .home-icon {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 99;
+}
+
+.calenda-wrapper .select-data {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.calenda-wrapper .select-data .cal-half {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  gap: 4px;
+}
+
+.calenda-wrapper .select-data .cal-half .title {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  z-index: 9;
+}
+
+.calenda-wrapper .select-data .cal-half .check-data-big {
+  display: block;
+  font-size: 60px;
+  color: transparent;
+  font-weight: bold;
+}
+
+.calenda-wrapper .select-data .cal-half .check-data-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.person-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 81.3%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: brightness(14px);
+          backdrop-filter: brightness(14px);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.person-wrapper .person-half {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.person-wrapper .person-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.person-wrapper .person-num .person-icon {
+  display: block;
+  width: 30px;
+  text-align: center;
+}
+
+.person-wrapper .person-num .person-type {
+  font-size: 34px;
+}
+
+.person-wrapper .person-title {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#home-btn {
+  margin: 0 auto;
+  height: 48px;
+  width: 81.3%;
+  background-color: transparent;
+  border-style: none;
+  border: 1px solid white;
+  border-radius: 24px;
+  color: white;
+  font-size: 16px;
+}
+
+:root {
+  /* change background color for .container__months */
+  --litepicker-day-width: 41.5px !important;
+}
+
+.litepicker .container__days .day-item.is-start-date {
+  background-color: black !important;
+}
+
+.litepicker .container__days .day-item.is-end-date {
+  background-color: black !important;
+}
+
+.litepicker .container__days .day-item.is-in-range {
+  background-color: rgba(138, 135, 135, 0.699) !important;
+}
+/*# sourceMappingURL=home.css.map */

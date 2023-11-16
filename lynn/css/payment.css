@@ -1,0 +1,130 @@
+.payment {
+  font-size: 16px;
+  background-color: #2D2D2D;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-grey {
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  height: 320px;
+  width: 100vw;
+  background-color: #EAEAEB;
+  display: block;
+  border-radius: 20px;
+  z-index: -2;
+}
+
+.payment-nav {
+  color: white;
+}
+
+.visa-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visa-wrapper img {
+  margin: 0 auto;
+}
+
+.payment-wrapper {
+  padding: 0 23px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  width: 327px;
+  height: 488px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.payment-wrapper .bar {
+  height: 12px;
+  width: 100px;
+  display: inline-block;
+  background-color: #D5D5D7;
+  border-radius: 50px;
+  margin-top: 11px;
+}
+
+.payment-wrapper .unit-half {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.payment-wrapper .unit-half .card-unit {
+  width: 35vw;
+}
+
+.payment-wrapper .card-unit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 13px;
+}
+
+.payment-wrapper .card-unit label {
+  padding-left: 10px;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.payment-wrapper p {
+  font-family: Helvetica;
+  font-weight: 300;
+  color: #A3A3A3;
+  font-size: 13px;
+}
+
+.payment-wrapper .long {
+  margin: 0 0 20px 0;
+  width: 300px;
+}
+
+#receipt-back {
+  font-size: 27px;
+  font-weight: 200;
+}
+
+input[type=number]:not(.browser-default),
+input[type=text]:not(.browser-default) {
+  width: 98%;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  padding-left: 10px;
+}
+
+.card-unit input[type=text]:focus + label {
+  color: black !important;
+}
+/*# sourceMappingURL=payment.css.map */

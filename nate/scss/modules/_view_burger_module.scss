@@ -1,0 +1,153 @@
+
+
+// <!-- font-family: 'BRUSHMOSH! Demo';
+// font-family: 'Rekobip - Free For Personal Use'; -->
+
+
+
+
+.image-container {
+    
+position: relative;
+left: 0;
+top: 0;
+
+.burger-image {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    margin-top: -10%
+    
+}
+
+.arrow-back {
+    position: absolute;
+    
+    z-index: 1000;
+   
+    width: 35px;
+    height: 30px;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
+
+}
+
+.order-container {
+   
+    display: none;
+    display: flex;
+    flex-direction: column;
+
+   
+   width: 100vw;
+
+   h1 {
+       font-size: 2rem;
+       color: $main-color;
+       letter-spacing: 2px;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       
+    font-family: 'BRUSHMOSH! Demo';
+   }
+
+   h2 {
+    font-family: 'Rekobip - Free For Personal Use';
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: black;
+    display: flex;
+	margin-top: 0;
+    margin-left: 5%;
+   }
+}
+
+span {
+    
+    
+    font-family: 'Chilanka', cursive;
+    font-size: 1.2rem;
+    
+    
+} 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 24px;
+    
+    -webkit-tap-highlight-color: transparent
+}
+
+.switch input {
+   
+    opacity: 5;
+    width: 0;
+    height: 0;
+}
+
+
+input:checked+.slider {
+  
+    background-color: $main-color;
+    
+}
+
+
+
+.slider {
+    position: absolute;
+    
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 206, 206);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+
+
+
+.slider.round {
+    border-radius: 16px;
+    width: 23px;
+    margin-left: 40%;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2%;
+    margin-top: -5%;
+}
+
+.input-wrapper>span {
+    
+    padding: 2%;
+    margin-right: 10px;
+    flex-basis: 65%;
+}
+
+.input-wrapper>label {
+    
+    flex-basis: 35%;
+
+}
+
+
+
+

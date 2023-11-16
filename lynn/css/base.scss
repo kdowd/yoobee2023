@@ -1,0 +1,142 @@
+@import "./var";
+html,
+body,
+h2,
+h1,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    .material-icons {
+        margin: 0 18px;
+        font-size: 37px;
+    }
+    .icon-back {
+        font-size: 25px;
+        font-weight: 200;
+    }
+    a {
+        height: 37px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.wrapper {
+    // position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 100vw;
+    // border: 1px salmon solid;
+    display: flex;
+}
+
+.app-section {
+    width: 100vw;
+    min-width: 100vw;
+    height: 812px;
+}
+
+a {
+    color: white;
+}
+
+button {
+    outline: none;
+}
+
+button:focus {
+    background-color: black !important;
+    color: white;
+}
+
+.sort-dropdown .btn:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.btn:focus {
+    color: white;
+    background-color: black !important;
+}
+
+.long {
+    @include flexcenter(row);
+    margin-top: 32px;
+    width: 327px;
+    color: white;
+    height: 48px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid black !important;
+    -webkit-box-shadow: 0 1px 0 0 black!important;
+    box-shadow: 0 1px 0 0 black !important;
+    padding-left: 10px;
+}
+
+#all-listing-sideNav-btn,
+#booking-sideNav-btn {
+    color: black;
+}
+
+#home-sideNav-btn,
+#detail-sideNav-btn,
+#payment-sideNav-btn {
+    color: white;
+}
+
+.nav-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icon-back {
+    font-size: 16px;
+}
+
+.preloading {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    z-index: 9999999;
+    display: flex;
+    background-color: rgba(47, 47, 47, 0.7);
+    .santa {
+        margin: auto auto;
+        img {
+            width: 300px;
+        }
+    }
+    .preloader-wrapper {
+        margin: auto auto;
+        .spinner-blue-only {
+            border-color: white;
+        }
+    }
+}
+
+.noshow {
+    display: none !important;
+}

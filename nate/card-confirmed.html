@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+   
+      <a href="./combos_menu.html"><img class="arrow-back arrow" src="./Images/arrow-back.png" alt=""></a></a>
+
+<div class="confirm-container">
+    <div class="table_number confirmation">
+      <h1>WOW!</h1>
+      <p>Your order is on the way:
+       <span> 33 </span></p>
+    </div>
+
+    <img class="qr-code" src="./Images/QR-code.png" alt="">
+
+    <p class="receipt-info">
+      Here is your code for your receipt 
+      Take a screenshot!
+    </p>
+
+    <div class="button_flex browse_button">
+      <a class="btn browse" id="modal-button" target="_self">KEEP BROWSING!</a>
+    </div>
+
+    <div class="discount-modal login-modal">
+      <div class="modal-content login-content">
+        
+        <a href="./home_menu 2.html"><div class="close">+</div></a>
+        <h1>Want to recieve a cheeky discount?!</h1>
+
+      
+        <div class="button_flex">
+          <a class="btn payments pick"href="./signup.html" target="_self">YEA!</a>
+        </div>
+        
+      
+    </div>
+
+    </div>
+
+  </div>
+  </body>
+
+  <script>
+ 
+ document.getElementById('modal-button').addEventListener('click',
+ function() { document.querySelector('.discount-modal').style.display = 'flex';});
+  
+  </script>
+</html>

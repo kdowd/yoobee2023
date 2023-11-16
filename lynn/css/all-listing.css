@@ -1,0 +1,202 @@
+.all-listing {
+  color: #A3A3A3;
+}
+
+#listing-content {
+  height: 85vh;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.filter-list {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.filter-list span {
+  color: transparent;
+  display: inline-block;
+  width: 54px;
+  height: 50px;
+  border-radius: 10PX;
+  border: 1px solid #dbdbdbc9;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-list .all {
+  line-height: 50px;
+  text-align: center;
+  width: 54px;
+  height: 50px;
+  border-radius: 10PX;
+  color: white;
+  background-color: black;
+}
+
+.filter-list .unsel {
+  color: black;
+  background-color: WHITE;
+  border: 1px solid grey;
+}
+
+.filter-list .hotel {
+  background-image: url(./imgs/filter-icon/disable-hotel.svg);
+}
+
+.filter-list .motel {
+  background-image: url(./imgs/filter-icon/disable-motel.svg);
+}
+
+.filter-list .hostel {
+  background-image: url(./imgs/filter-icon/disable-hostel.svg);
+}
+
+.filter-list .house {
+  background-image: url(./imgs/filter-icon/disable-house.svg);
+}
+
+.filter-list .hotel:hover {
+  background-color: black;
+  background-image: url(../imgs/filter-icon/w-hotel.svg) !important;
+}
+
+.filter-list .motel:hover {
+  background-color: black;
+  background-image: url(../imgs/filter-icon/w-motel-svgrepo-com.svg) !important;
+}
+
+.filter-list .hostel:hover {
+  background-color: black;
+  background-image: url(../imgs/filter-icon/hostel-w.svg) !important;
+}
+
+.filter-list .house:hover {
+  background-color: black;
+  background-image: url(../imgs/filter-icon/w-house.svg) !important;
+}
+
+.filter-list .disable-icon {
+  pointer-events: none;
+}
+
+.listing-nav {
+  color: black;
+}
+
+.sort-dropdown .btn {
+  line-height: 43px;
+  text-transform: none;
+  background-color: white;
+  width: 95px;
+  height: 43px;
+  border-radius: 10PX;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 17px;
+  border: 2px solid #A3A3A3;
+  color: #A3A3A3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+}
+
+.sort-dropdown .btn img {
+  width: 10px;
+}
+
+.card-wrapper {
+  margin: 16px auto;
+  width: 329px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.card-item {
+  width: 329px;
+  height: 233px;
+  background-color: #fff;
+}
+
+.card-item img {
+  width: 100%;
+}
+
+.card-item .room-infor-section {
+  padding: 0 5px;
+  color: #A3A3A3;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card-item .room-price {
+  color: black;
+  font-size: 23px;
+}
+
+.card-item .room-price span {
+  color: #A3A3A3;
+  font-size: 14px;
+}
+
+.room-amenities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.amenities-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.amenities-block img {
+  padding-bottom: 5px;
+}
+
+.amenities-block #rating {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.my-svg-alternate {
+  display: none;
+}
+/*# sourceMappingURL=all-listing.css.map */

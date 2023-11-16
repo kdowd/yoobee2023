@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Chilanka&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: 'BRUSHMOSH! Demo';
+  src: url("BRUSHMOSHDemo.woff2") format("woff2"), url("BRUSHMOSHDemo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rekobip - Free For Personal Use';
+  src: url("Rekobip-FreeForPersonalUse.woff2") format("woff2"), url("Rekobip-FreeForPersonalUse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn {
+  font-size: 2rem;
+  background-color: #FE202F;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  padding-top: 1.2rem;
+  font-family: 'BRUSHMOSH! Demo';
+  letter-spacing: 2px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 250px;
+}
+
+.splash .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.splash .btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 2.5rem;
+}
+
+.menu_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.menu_bar img {
+  margin-right: 5%;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.menu_bar h1 {
+  margin-right: 49%;
+  padding-bottom: 5%;
+  color: black;
+  font-family: 'Rekobip - Free For Personal Use';
+  position: relative;
+  z-index: 100;
+}
+
+.menu_drop {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  color: black;
+  background-color: white;
+  line-height: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+.menu_drop > ul > li {
+  list-style: none;
+  font-family: 'Rekobip - Free For Personal Use';
+  color: #FE202F;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: -15%;
+  margin-top: 15%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-info {
+  margin-top: -5%;
+  padding-bottom: 5%;
+  font-size: 1.0rem;
+  font-family: 'Chilanka', cursive;
+  width: 90%;
+  letter-spacing: 2px;
+  margin-left: 5%;
+  line-height: 20px;
+}
+
+.item-info h1 {
+  font-size: 2rem;
+  color: #FE202F;
+  font-family: 'BRUSHMOSH! Demo';
+}
+
+.combos img {
+  width: 90vw;
+  height: 350px;
+  margin-top: 5%;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container .btn2 {
+  font-family: 'Rekobip - Free For Personal Use';
+  font-size: 2rem;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 135px;
+  height: 60px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn2 img {
+  width: 28px;
+  height: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.order-container {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+}
+
+.order-container img {
+  width: 100vw;
+  height: auto;
+  margin-top: -10%;
+}
+
+.order-container h1 {
+  font-size: 2.5rem;
+  color: #FE202F;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'BRUSHMOSH! Demo';
+}
+
+.order-container h2 {
+  font-family: 'BRUSHMOSH! Demo';
+  font-size: 2rem;
+  color: #FE202F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-left: 5%;
+}
+
+span {
+  font-family: 'Rekobip - Free For Personal Use';
+  font-size: 2rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 34px;
+  /* turn off highlight if users taps element */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.switch input {
+  /* hide the normal input view */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* use css sibling selector */
+input:checked + .slider {
+  /* our checked=true background color */
+  background-color: seagreen;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* the ball in the center */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  /* re-calculate if  you change parent width */
+  right: 30px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  /* make it a circle */
+  border-radius: 50%;
+  /* re-calculate if  you change parent width */
+  -webkit-transform: translateX(-32%);
+          transform: translateX(-32%);
+}
+
+.slider.round {
+  border-radius: 16px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-wrapper > span {
+  margin-right: 8px;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.input-wrapper > label {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.controls {
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+header {
+  width: 100vw;
+  height: 180px;
+  background-color: #FE202F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1000;
+  font-family: 'BRUSHMOSH! Demo';
+  color: white;
+  letter-spacing: 2px;
+}
+
+header h1 {
+  margin-top: 13%;
+}
+
+button:focus {
+  outline: none;
+}
+
+.back_arrow {
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  margin-left: -43%;
+  margin-top: -13%;
+}
+
+.back_arrow img {
+  width: 35px;
+  height: 30px;
+}
+
+.page_title {
+  font-family: 'BRUSHMOSH! Demo';
+  font-size: 1.5rem;
+  color: #FE202F;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 43%;
+}
+
+.home_container {
+  font-family: 'BRUSHMOSH! Demo';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FE202F;
+  font-size: 2rem;
+  margin-top: 30%;
+}
+
+.button_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.button_flex a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 2.5rem;
+}
+
+.table_number {
+  font-size: 1.5rem;
+  color: #FE202F;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+  font-family: 'BRUSHMOSH! Demo';
+}
+
+.table_number p {
+  margin-top: -8%;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Rekobip - Free For Personal Use';
+  font-size: 2.2rem;
+}
+/*# sourceMappingURL=styles.css.map */

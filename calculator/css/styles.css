@@ -1,0 +1,94 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.calc-container {
+  background-color: snow;
+  position: relative;
+  display: inline-block;
+  top: 5%;
+  left: 5%;
+
+  width: 200px;
+  height: 276px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.calc-row {
+  width: 100%;
+  /*there are 5 rows in the calc*/
+  height: calc(100% / 6);
+  background-color: snow;
+  padding-left: 5%;
+  padding-top: 0;
+}
+
+.calc-screen {
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 2.4%;
+  background-color: snow;
+}
+
+.calc-screen textarea {
+  font-size: 2.8rem;
+  resize: none;
+  padding-left: 0;
+  outline: none;
+  border: 1px solid rgba(80%, 80%, 80%, 0.8);
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+  width: 91%;
+  text-align: right;
+}
+
+.calc-screen textarea:focus {
+  color: rgba(255, 99, 71, 1);
+}
+
+.calc-row div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 38px;
+  display: inline-block;
+  margin-right: 2px;
+  border: 1px solid rgba(80%, 80%, 80%, 0.8);
+  cursor: pointer;
+  background-color: white;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.3rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /*remove the user selection*/
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+div.red-box {
+  background-color: rgba(255, 99, 71, 1);
+}
+
+div.grey-box {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+div.full-width {
+  width: 88%;
+}

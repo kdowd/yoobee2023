@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+
+
+
+<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <div class="home_container">
+        <div>
+            <img src="./Images/main-logo.png" alt="" />
+        </div>
+
+
+        <div class="table_number">
+            <h1>TABLE 33</h1>
+            <p>TE ROHO RAUA TORU</p>
+        </div>
+
+        <div class="button_flex">
+            <a class="btn" id="signin-modal" target="_self">BROWSE MENU</a>
+        </div>
+
+        <div class="discount-modal login-modal">
+            <div class="modal-content login-content">
+                <a href="./index.html">
+                    <div class="close">+</div>
+                </a>
+
+
+
+                <div class="button_flex">
+                    <a class="btn payments pick signin-btn" href="./signup-splash.html" target="_self">SIGN-IN</a>
+                </div>
+                <div class="button_flex">
+                    <a class="btn payments pick signup-btn" href="./signup-splash.html" target="_self">SIGN-UP</a>
+                </div>
+
+                <a href="./home_menu.html">
+                    <p>CONTINUE AS GUEST</p>
+                </a>
+
+            </div>
+</body>
+<script>
+    document.getElementById('signin-modal').addEventListener('click',
+        function() {
+            document.querySelector('.discount-modal').style.display = 'flex';
+        });
+</script>
+
+</html>

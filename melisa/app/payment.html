@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheek & Chong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="second-nav">
+      <div>
+        <img class="arrow" onclick="goBack()" src="./images/arrow.png" alt="arrow"/>
+      </div>
+      <div>
+        <a href="./index.html"
+          ><img class="logo" src="./images/logo-white.png" alt="logo"
+        /></a>
+      </div>
+    </div>
+
+    <div class="order-confirm">
+        <p class="header-pay">Payment</p>
+        <p class="order-details">Please review your order</p>
+        <div class="grey-item top">
+            <p>1x VIETNAMESE BEACH ROLLS - $17</p>
+        </div>
+        <div class="white-item">
+            <p>1x POPCORN PRAWNS - $19</p>
+        </div>
+        <div class="grey-item">
+            <p>1x SWEET POTATO PAD SEE EW - $27</p>
+        </div>
+        <div class="white-item">
+            <p>1x SHAKING BEEF - $38</p>
+        </div>
+        <div class="grey-item">
+            <p>1x GREEN VEGAN CURRY - $26</p>
+        </div>
+        <div class="white-item">
+            <p>1x STICKY PORK RIBS - $22</p>
+        </div>
+        <div class="grey-item">
+            <p>TOTAL AMOUNT TO PAY - $149</p>
+        </div>
+
+        <button class="paynow" type="submit">PAY BILL NOW</button>
+    </div>
+
+    <p class="split">Want to split the bill or pay at the counter? <a class="counter" href="./thankyoutwo.html">Please click here.</a> </p>
+
+    <div class="modal2 modal-hidden">
+        <div class="pay-content">
+          <div class="modal-details">
+            <p class="pay-header">Pay Now</p>
+            <br>
+        <div class="payment-box">
+            <div class="google-pay">
+                <div class="google-text">
+                    <p>Pay with Google Pay</p>
+                </div>
+                <div class="google-pic">
+                    <img src="./images/g-pay.jpg" alt="google-pay">
+                </div>
+            </div>
+            <div class="card-pay">
+                <div class="card-text">
+                    <p><span>Pay with card</span></p>
+                </div>
+                <div class="card-pic">
+                    <img src="./images/cards.jpg" alt="cards">
+                </div>
+            </div>
+            <div class="card-details">
+              <div class="card-name">
+                  <p class="card-dets"><span>Name on card:</span> Rebecca Smith</p>
+              </div>
+              <div class="card-number">
+                 <div class="num"><p class="card-dets"><span>Card number:</span> 01234-56789-000</p></div> 
+                 <div class="cvv"><p class="card-dets">10/24 | 363</p></div>
+              </div>
+          </div>
+            <div class="total-pay">
+                <div class="total-text">
+                    <p><span>Total to pay:</span> $149</p>
+                </div>
+            </div>
+        </div>
+
+            <form action="./thankyouone.html">
+              <div class="pay-now-buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="add">Pay Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+    <script>
+        var mymodal = document.querySelector(".modal2");
+        var mypaynow = document.querySelector(".paynow");
+        var mycancelbutton = document.querySelector(".cancel");
+        mypaynow.addEventListener("click", onClicked);
+        function onClicked() {
+          console.log("clicked");
+          mymodal.classList.remove("modal-hidden");
+        }
+        mycancelbutton.addEventListener("click", onCancel);
+        function onCancel() {
+          console.log("cancel clicked");
+          mymodal.classList.add("modal-hidden");
+        }
+      </script>
+  </body>
+</html>

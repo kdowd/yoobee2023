@@ -1,0 +1,324 @@
+.second-nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: $green-color;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: 20px;
+  z-index: 100;
+  .logo {
+    width: 70px;
+  }
+  .arrow {
+    max-width: 40px;
+  }
+}
+
+.order-confirm {
+  margin-top: 105px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .header-pay {
+      font-size: 40px;
+      font-weight: 800;
+  }
+  .con-header {
+    padding-top: 15px;
+    font-size: 35px;
+    font-weight: 800;
+}
+  p {
+      font-size: 16px;
+  }
+  .spacing {
+    padding: 4px;
+  }
+  .order-details {
+      font-size: 24px;
+  }
+}
+
+.firm-header {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.pro-bar {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+.top {
+  margin-top: 15px;
+}
+
+.order-details {
+  color: $green-color;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.grey-item {
+  background-color: lightgray;
+  padding: 18px 0px;
+  width: 100vw;
+}
+
+.white-item {
+  background-color: rgba(240, 240, 240, 0.938);
+  padding: 18px 0px;
+  width: 100vw;
+}
+
+.order-help {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.split, .counter {
+    font-size: 20px;
+    font-weight: 700;
+    color: $mid-green-color;
+    text-align: center;
+    padding: 25px 0px 20px 0px;
+}
+
+.counter {
+    text-decoration: underline;
+}
+
+.confirm-buttons, .refresh {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  .more,
+  .send, .progress {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid $dark-green-color;
+    border-radius: 5px;
+    padding: 15px 28px;
+  }
+  .progress {
+      background-color: grey;
+      border: 1px solid $text-grey-color;
+  }
+
+  .more {
+    background-color: $green-color;
+    margin-right: 10px;
+    border: 1px solid $dark-green-color;
+  }
+
+  .send {
+    background-color: $dark-green-color;
+    border: 1px solid $dark-green-color;
+  }
+}
+
+.paynow {
+    margin-top: 28px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid $dark-green-color;
+    background-color: $dark-green-color;
+    border-radius: 5px;
+    padding: 15px 28px;
+}
+
+.progress-bar {
+     width: 90vw;
+ }
+
+.confirm-img {
+    background-image: url("../images/main-img.jpg");
+    width: 100vw;
+    height: 52vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .white-box-confirm {
+        width: 45vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        padding: 28px 20px 20px 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-top: 200px;
+}
+
+.modal2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-top: 100px;
+  }
+
+.pay-content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    padding: 15px;
+}
+
+.modal-image {
+    width: 100%; 
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    object-fit: cover;
+    img {
+        width: 100%; 
+        height: 100%;
+        border-radius: 0px 5px 5px 0px;
+        object-fit: cover;
+    }
+}
+
+.modal-details {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    .pay-header {
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+.payment-box {
+    border: 1px solid $text-grey-color;
+    border-radius: 5px;
+    width: 60vw;
+    margin-bottom: 15px;
+    span {
+        font-weight: 700;
+    }
+}
+
+
+.google-pay {
+    display: grid;
+    grid-template-columns: 6.5fr 0.5fr;
+    .google-pic {
+        width: 100%;
+        padding: 15px;
+        img {
+            height: 45px;
+            display: block;
+        }
+    }
+}
+
+.card-pay {
+    display: grid;
+    grid-template-columns: 5.5fr 0.5fr;
+    .card-pic {
+        width: 100%;
+        padding: 15px;
+        img {
+            height: 45px;
+            display: block;
+        }
+    }
+}
+
+.google-pay, .card-pay, .card-name {
+    border-bottom: 1px solid $text-grey-color;
+}
+
+.google-text, .card-text {
+    padding: 28px 20px 0px 20px;
+}
+
+.card-details {
+    border: 1px solid $text-grey-color;
+    border-radius: 5px;
+    width: 55vw;
+    margin: 20px 20px 0px 20px;
+}
+
+.card-dets {
+    padding: 20px;
+}
+
+.card-number {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.total-text {
+    padding: 20px;
+}
+.total-pay {
+    margin-top: 20px;
+    border-top: 1px solid $text-grey-color;
+}   
+
+.modal-hidden {
+    display: none;
+}
+
+.thanks-header {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.feedback {
+    padding: 15px;
+    height: 15vh;
+    width: 75vw;
+    margin-top: 20px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid $text-grey-color;
+    border-radius: 5px;
+    color: $text-grey-color;
+    font-size: 18px;
+}

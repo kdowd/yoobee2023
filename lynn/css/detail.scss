@@ -1,0 +1,219 @@
+ @import "./var";
+ p {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .detail {
+     position: relative;
+     color: #A3A3A3;
+     font-size: 14px;
+ }
+ 
+ .detail-nav {
+     width: 100%;
+     //  display: flex;
+     //  justify-content: space-between;
+     position: fixed;
+     top: 0vh;
+     left: 0vw;
+     //  width: 100%;
+     color: white;
+     //  z-index: -1;
+     //  display: none;
+ }
+ 
+ .detail-img {
+     //  z-index: -99;
+     // margin-top: 75px;
+     width: 100%;
+     height: 300px;
+ }
+ 
+ .detail-fixed {
+     font-size: 16px;
+     padding: 0 24px;
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+     div {
+         // background-color: blueviolet;
+         display: flex;
+         // justify-content: space-between;
+         align-items: center;
+     }
+     &>:first-child {
+         // background-color: yellow;
+         display: flex;
+         align-items: flex-end;
+         h4 {
+             color: #000;
+             margin: 0;
+             padding: 0;
+             font-size: 20px;
+             font-weight: bold;
+         }
+         span:first-of-type {
+             color: #000;
+             margin-left: auto;
+             font-size: 20px;
+             font-weight: bold;
+         }
+         // span:first-of-type 
+         // border-bottom: 1px solid gray;
+     }
+     &>:last-child {
+         // background-color: yellow;
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 2px solid gray;
+         padding-bottom: 10px;
+         margin-bottom: 16px;
+     }
+ }
+ 
+ .subtitle {
+     font-size: 16px;
+     color: black;
+     font-weight: bold;
+ }
+ 
+ #detail-scroll {
+     // background-color: red;
+     padding: 0 24px;
+     font-size: 14px;
+     height: 46vh;
+     width: 100vw;
+     overflow-y: scroll;
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
+     .description {
+         height: 78px;
+     }
+     .around {
+         ol {
+             list-style-type: square;
+             margin: 0;
+             li {
+                 margin-top: 10px;
+             }
+         }
+     }
+     .time {
+         &>div {
+             padding-left: 5px;
+             display: flex;
+             justify-content: space-around;
+         }
+         .time-block {
+             display: flex;
+             flex-direction: column;
+             gap: 8px;
+             span:last-of-type {
+                 font-size: 16px;
+                 color: black;
+                 font-weight: bold;
+             }
+             span:first-of-type {
+                 font-size: 11px;
+             }
+         }
+     }
+     .select-room {
+         padding-bottom: 2rem;
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         .room-option {
+             padding: 0px 18px;
+             height: 43px;
+             @include flexcenter(row);
+             justify-content: flex-start;
+             gap: 13px;
+             border-radius: 10px;
+             background-color: #D5D5D738;
+             div:first-of-type {
+                 border-radius: 5px;
+                 width: 31px;
+                 height: 26px;
+                 background-color: #D5D5D7D6;
+                 display: flex;
+                 span {
+                     margin: 0 auto;
+                     color: black;
+                     font-size: 16px;
+                     font-weight: bold;
+                 }
+             }
+             div:nth-of-type(2) {
+                 //  background-color: green;
+                 font-size: 12px;
+                 p:first-of-type {
+                     margin: 0;
+                     padding: 0;
+                     color: black;
+                     font-weight: bold;
+                 }
+             }
+             .switch {
+                 margin-left: auto;
+             }
+             .switch label input[type=checkbox]:checked+.lever {
+                 background-color: black;
+             }
+             .switch label input[type=checkbox]:checked+.lever:after {
+                 background-color: whitesmoke;
+             }
+         }
+     }
+ }
+ 
+ .detail-submit {
+     box-shadow: -5px -5px 6px gainsboro;
+     position: relative;
+     padding: 0px 18px;
+     padding-top: 8px;
+     margin-bottom: 20px;
+     display: flex;
+     gap: 5px; //  justify-content: space-between;
+     //  background-color: green;
+     button {
+         margin-bottom: 20px;
+         border: 2px white solid;
+         z-index: 99;
+         color: white;
+         background-color: black;
+         height: 48px;
+         border-radius: 10px;
+     }
+     button:first-of-type {
+         width: 100%;
+         font-size: 16px;
+         font-weight: bold;
+     }
+     button:last-of-type {
+         //  border-style: none;
+         width: 48px;
+         height: 48px;
+         display: none;
+         //  visibility: hidden;
+     }
+     .detail-map {
+         border-radius: 10px;
+         background-color: black;
+         position: absolute;
+         bottom: 10px;
+         left: 10px;
+         height: 260px;
+         width: 358px;
+         display: none;
+     }
+     .show {
+         display: block !important;
+     }
+ }
+ 
+ .hidden {
+     display: none;
+ }

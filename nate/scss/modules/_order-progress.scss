@@ -1,0 +1,69 @@
+.waiting-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   height: 100vw;
+   width: 100vw;
+
+    .table-container {
+       
+        margin-top: -10%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        h1 {
+            font-size: 3rem;
+            font-family: 'BRUSHMOSH! Demo';
+            text-align: center;
+        }
+img {
+  
+    width: 150px;
+    height: 150px;
+}
+
+
+    }
+  
+   
+    
+    
+}
+
+
+
+.action-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+       
+        .insta-tag {
+            margin: 0 auto;
+        }
+    p {
+        font-size: 1.5rem;
+        
+        font-family: 'Rekobip - Free For Personal Use';
+        text-align: center;
+        width: 250px;
+        letter-spacing: 1px;
+        
+
+        span {
+            text-align: center;
+            font-size: 1.5rem;
+            color: $main-color;
+            font-family: 'BRUSHMOSH! Demo';}
+
+    }
+
+}
+
+.close2 {
+    margin-top: -40%;
+}

@@ -1,0 +1,101 @@
+
+.arrow  {
+    position: relative;
+    filter: invert(1);
+       
+    
+        z-index: 1000;
+   
+       width: 35px;
+       height: 30px;
+     margin-left: 3%;
+     margin-top: 5%;
+}
+.cart-container {
+    
+
+    margin-top: -15%;
+    
+    overflow: hidden;
+    top: 0px;
+    bottom: 0;
+width: 100vw;
+
+ 
+    .table_number {
+        .time {
+            font-family: 'Chilanka', cursive;
+        }
+    
+    
+    }
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-contents {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: -10%;
+   
+    
+
+    .items {
+        
+       
+
+        h3 {
+            
+            margin: 0;
+            font-size: 2.0rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        font-family: 'Rekobip - Free For Personal Use';
+    }
+
+    .price {
+        padding-left: 15%;
+        font-family: 'BRUSHMOSH! Demo';
+        color: $main-color;
+        font-size: 1rem;
+        
+
+    }
+    
+    .total {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2rem;
+        width: 85vw;
+        padding-top: 20%;
+        padding-right: 20%;
+
+        h3 {
+            margin-right: 10%;
+        }
+    }
+
+  
+}
+
+.payment-buttons {
+   
+    padding-top: 10%;
+ }

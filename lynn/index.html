@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>accommodation App</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/var.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/all-listing.css">
+    <link rel="stylesheet" href="./css/map-listing.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="./css/receipt.css">
+
+
+
+    <!-- litepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="preloading-div-wrap">
+        <div class="app-section preloading noshow">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="santa"><img src="https://lottiefiles.com/88472-santa-pop-up" alt=""></div> -->
+        </div>
+    </div>
+    <div class="wrapper">
+
+        <!-- nva page -->
+        <div class="nav">
+            <div id="slide-out" class="sidenav">
+                <div class="close-nav">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <h4>TripHome</h4>
+                <ul>
+                    <li>
+                        <div class="nav-icon">
+                            <img src="./imgs/icon/nav/person.svg" alt="">
+                        </div>
+                        <p>Profile</p>
+                    </li>
+                    <li>
+                        <div class="nav-icon">
+                            <img src="./imgs/icon/nav/heart.svg" alt="">
+                        </div>
+                        <p>Favourite</p>
+                    </li>
+                    <li id="li-home">
+                        <div class="nav-icon" id="nav-home-icon">
+                            <img src="./imgs/icon/nav/home.svg" alt="">
+                        </div>
+                        <p>home</p>
+                    </li>
+                    <li>
+                        <div class="nav-icon">
+                            <img src="./imgs/icon/nav/calendar.svg" alt="">
+                        </div>
+                        <p>Booking</p>
+                    </li>
+                    <li>
+                        <div class="nav-icon">
+                            <img src="./imgs/icon/nav/settings.svg" alt="">
+                        </div>
+                        <p>Settings</p>
+                    </li>
+                    <li>
+                        <div class="nav-icon">
+                            <img src="./imgs/icon/nav/notifications.svg" alt="">
+                        </div>
+                        <p>Notification</p>
+                    </li>
+
+
+                </ul>
+                <div class="logout"> Log Out</div>
+            </div>
+        </div>
+
+
+
+        <!-- nva page  end-->
+        <!-- page home -->
+        <div class="app-section home">
+            <header>
+                <div class="nav home-menu">
+                    <h1>TripHome</h1>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons" id="home-sideNav-btn">menu</i>
+                    </a>
+
+                </div>
+
+            </header>
+
+            <section>
+
+                <div class="calenda-wrapper">
+                    <div class="litepicker-select" id="litepicker">
+
+                    </div>
+                    <div class="home-icon">
+                        <img src="./imgs/icon/0-home-arrow.svg" alt="">
+                    </div>
+                    <div class="select-data">
+                        <div class="cal-half">
+                            <div class="title">Check in</div>
+                            <div class="check-data-big " id="litepicker1">26</div>
+                            <div class="check-data-small">
+                                <div class="check-com">
+                                    <span class="check-week" id="date-start-week">Fri</span> | <span class="check-month" id="date-start-month">Dec</span>
+                                </div>
+                                <div class="check-time">10:00AM</div>
+                            </div>
+
+                        </div>
+                        <div class="cal-half">
+                            <div class="title">Check out</div>
+                            <div class="check-data-big ">27</div>
+                            <div class="check-data-small">
+                                <div class="check-com" id="date-end-weekline">
+                                    <span class="check-week" id="date-end-week">Sta</span> | <span class="check-month" id="date-end-month">Dec</span>
+                                </div>
+                                <div class="check-time">10:00AM</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section>
+                <div class="person-wrapper">
+                    <div class="person-half">
+                        <div class="person-num">
+                            <div class="person-icon subsract">-</div>
+                            <div class="person-type " id="adult">1</div>
+                            <div class="person-icon add">+</div>
+                        </div>
+                        <div class="person-title">
+                            ADULTS
+                        </div>
+                    </div>
+                    <!-- <div class="person-half">
+                        <div class="person-num">
+                            <div class="person-icon subsract">-</div>
+                            <div class="person-type " id="child">0</div>
+                            <div class="person-icon add">+</div>
+                        </div>
+                        <div class="person-title">
+                            CHILDREN
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section>
+                <button class="pageButton" id="home-btn" data-target=".all-listing">Search
+                </button>
+            </section>
+
+
+
+
+
+        </div>
+        <!-- page all Search item -->
+        <div class="app-section all-listing">
+            <!-- fixed header -->
+            <header>
+                <div class="nav listing-nav ">
+                    <i class="material-icons icon-back" id="all-listing-back" data-target=".home">arrow_back</i>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons " id="all-listing-sideNav-btn">menu</i>
+                    </a>
+
+                </div>
+            </header>
+            <!-- fixed header end -->
+            <section>
+                <div class="filter-list">
+                    <div class="all " id="all">ALL</div>
+                    <span class="listing-icon hotel disable-icon" id="hotel">hotel</span>
+                    <span class="listing-icon motel disable-icon" id="motel">motel</span>
+                    <span class="listing-icon hostel disable-icon" id="hostel">hostel</span>
+                    <span class="listing-icon house disable-icon" id="house">houses</span>
+                </div>
+
+            </section>
+            <div id="listing-content">
+                <div class="card-wrapper">
+                </div>
+            </div>
+        </div>
+        <!-- detail page -->
+        <div class="app-section detail">
+
+            <div class="nav detail-nav hidden">
+                <i class="material-icons icon-back" id="detail-arrow-back" data-target=".all-listing">arrow_back</i>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons" id="detail-sideNav-btn">menu</i>
+                </a>
+
+            </div>
+
+            <div class="detail-img">
+            </div>
+            <div class="detail-fixed">
+            </div>
+            <!-- scroll section  -->
+            <section id="detail-scroll">
+                <div class="description">
+
+                </div>
+                <div class="around">
+                    <span class="subtitle">What’s around</span>
+
+                </div>
+                <div class="time">
+                    <span class="subtitle"> Arriving/leaving </span>
+                    <div>
+                        <div class="time-block">
+                            <span>Check-in Time</span>
+                            <span>3PM - Any</span>
+                        </div>
+                        <div class="time-block">
+                            <span>Check-out Time</span>
+                            <span>11AM</span>
+                        </div>
+                        <div class="time-block">
+                            <span>Check-out</span>
+                            <span>Express</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="select-room">
+                    <span class="subtitle">Room Type</span>
+
+                </div>
+            </section>
+            <section>
+
+                <div class="detail-submit">
+                    <div class="detail-map">
+                        <div class="map-link">
+                            google map
+                        </div>
+                    </div>
+                    <button id="reserve-btn" data-target=".booking">Reserve</button>
+                    <button id="detail-map-btn"> <img src="./imgs/icon/material-room.svg" alt="">
+                    </button>
+                </div>
+            </section>
+
+
+        </div>
+        <div class="app-section booking">
+
+            <div class="nav booking-nav">
+                <i class="material-icons icon-back" data-target=".detail">arrow_back</i>
+                <span class="nav-title">Booking</span>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="booking-sideNav-btn">menu</i></a>
+
+            </div>
+            <!-- //input user infor -->
+            <section id="person-info">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <!-- <i class="material-icons prefix">phone</i> -->
+                                <input id="icon_telephone" type="number" class="validate">
+                                <label for="icon_telephone">Telephone</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+            <!-- room review -->
+            <section>
+                <div class="review">
+
+                </div>
+            </section>
+            <!-- Time review -->
+            <section>
+                <div class="booking-review-time">
+                    <div>
+                        <fieldset>
+                            <legend> Check in </legend>
+                            <div id="detail-checkin"></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Check out </legend>
+                            <div id="detail-checkout"></div>
+                        </fieldset>
+                    </div>
+
+                    <fieldset>
+                        <legend>Guest</legend>
+                        <div id="detail-person"></div>
+                    </fieldset>
+
+                </div>
+
+            </section>
+            <!-- price review -->
+            <section>
+                <div class="detail-breakdown">
+                    <h4>Payment Detail</h4>
+                    <div class="bg-wrap">
+                    </div>
+                </div>
+            </section>
+            <!-- go to pay -->
+            <section>
+                <button class="long disable-btn" id="confir-booking-btn" data-target=".payment"><img src="./imgs/icon/04-booking-lock.svg" alt="">Payment</button>
+            </section>
+        </div>
+
+        <div class="app-section payment">
+            <div class="bottom-grey">
+            </div>
+            <div class="nav payment-nav">
+                <i class="material-icons icon-back" data-target=".booking">arrow_back</i>
+                <span class="nav-title">Payment</span>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons" id="payment-sideNav-btn">menu</i>
+                </a>
+
+            </div>
+            <div class="visa-wrapper">
+                <img src="./imgs/05-payment-visa.png" alt="">
+            </div>
+            <div class="payment-wrapper">
+                <div class="bar"></div>
+                <div class="card-unit">
+                    <input class="" type="text" name="ccNum" id="ccNum" placeholder=" " required>
+                    <label for="ccNum">Card Number</label>
+
+                </div>
+                <div class="card-unit">
+                    <input type="text" name="ccName" id="ccName" placeholder=" " required>
+                    <label for="ccName">Name on card</label>
+
+                </div>
+                <div class="unit-half">
+                    <div class="card-unit">
+                        <input type="text" name="exp" id="exp" maxlength="5" placeholder=" " required>
+                        <label for="exp">MM/YY</label>
+
+                    </div>
+                    <div class="card-unit">
+                        <input type="text" name="cvv" id="cvv" maxlength="3" placeholder=" " required>
+                        <label for="cvv">CVV</label>
+
+                    </div>
+                </div>
+                <p>
+                    Card information is stored on a secure server
+                </p>
+
+                <button class="long disable-btn" data-target=".receipt" id="payment-btn">CheckOut</button>
+            </div>
+
+        </div>
+
+        <div class="app-section receipt">
+            <div class="nav receipt-nav">
+                <span></span>
+                <!-- <i class="material-icons icon-back" data-target=".payment">arrow_back</i> -->
+                <span class="nav-title">Receipt</span>
+                <span></span>
+                <!-- <i class="material-icons">menu</i> -->
+            </div>
+            <div class="print-receipt">
+                <div class="select-mark">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    <h4>Success!</h4>
+
+                </div>
+                <div class="receipt-text">
+                    <div>
+                        <h6>Customer Receipt</h6>
+                        <p>Your reservation is now confirmed！</p>
+                    </div>
+                    <div>
+                        <div class="rec-user-unit">
+                            <span>Guest</span>
+                            <span id='receipt-name'></span>
+                        </div>
+                        <div class="rec-user-unit">
+                            <span>Nights</span>
+                            <span id='receipt-night'></span>
+                        </div>
+                        <div class="rec-user-unit">
+                            <span>Email</span>
+                            <span id='receipt-email'></span>
+                        </div>
+                    </div>
+                    <div class="receipt-data">
+                        <div>
+                            <span>CHECK IN</span>
+                            <SPAN id='receipt-checkin'>16 DEC 2021</SPAN>
+                        </div>
+                        <div>>>></div>
+                        <div>
+                            <span>CHECK OUT</span>
+                            <SPAN id='receipt-checkout'>23 DEC 2021</SPAN>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rec-user-unit">
+                            <span>Pirce </span>
+                            <span id='receipt-roompay'></span>
+                        </div>
+                        <div class="rec-user-unit">
+                            <span>Services</span>
+                            <span id='receipt-taxpay'></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rec-user-unit">
+                            <h6>Total</h6>
+                            <h6 id='receipt-totalpay'></h6>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="backhome">
+                    <span id="backhomebtn" data-target=".home">Back Home </span>
+                    <span>>>></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="./js/all-listing.js" defer></script>
+    <!-- <script src="./js/splide.min.js"></script> -->
+    <!-- <script src="./js/map-listing.js"></script> -->
+    <script src="./js/sideNav.js" defer></script>
+    <script src="./js/detail.js" defer></script>
+    <script src="./js/booking.js" defer></script>
+    <script src="./js/payment.js" defer></script>
+    <script src="./js/receipt.js" defer></script>
+
+</body>
+
+</html>

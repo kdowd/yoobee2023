@@ -1,0 +1,35 @@
+$main-color: #FE202F;
+
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+
+
+
+
+@font-face {
+    font-family: 'BRUSHMOSH! Demo';
+    src: url('../BRUSHMOSHDemo.woff2') format('woff2'),
+        url('../BRUSHMOSHDemo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rekobip - Free For Personal Use';
+    src: url('../Rekobip-FreeForPersonalUse.woff2') format('woff2'),
+        url('../Rekobip-FreeForPersonalUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,68 @@
+.discount-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+
+
+.modal-content {
+    
+    font-family: 'Rekobip - Free For Personal Use';
+    letter-spacing: 2px;
+    width: 80vw;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    
+
+    h1 {
+        margin-top: 15%;
+    }
+
+    .confirm {
+       
+        font-size: 2rem;
+    
+
+    }
+
+    .deny {
+        font-size: 2rem;
+    }
+
+
+    
+}
+
+.close {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-top: -2%;
+    right: 10px;
+    font-size: 3rem;
+    transform: rotate(45deg)
+    
+}
+
+.signin-close {
+    margin-top: -10%;
+}
+
+.close3 {
+    margin-top: -20%;
+}
+
+
+
+

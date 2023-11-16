@@ -1,0 +1,110 @@
+.courses-header {
+    margin-top: 85px;
+}
+.menu-btm {
+    margin-bottom: 15px;
+}
+.tandc {
+    margin-top: 15px;
+}
+
+.deals-header {
+     margin-bottom: 15px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-top: 200px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    padding: 15px;
+}
+
+.modal-image {
+    width: 100%; 
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    object-fit: cover;
+    img {
+        width: 100%; 
+        height: 100%;
+        border-radius: 0px 5px 5px 0px;
+        object-fit: cover;
+    }
+}
+
+.modal-text {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.cancel, .add {   
+        color: white;    
+        font-size: 17px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;        
+        padding: 12px 17px;
+        border: 1px solid $dark-green-color;
+        border-radius: 5px;
+}
+
+.add {    
+    background-color: $dark-green-color;
+}
+
+.cancel {
+    background-color: grey;
+    margin-right: 10px;
+}
+
+.kitchen-changed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 90px;
+    button {
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        background-color: $dark-green-color;
+        padding: 12px 18px;
+        border: 1px solid $dark-green-color;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: $text-grey-color;
+        transition: all 0.5s;
+    }
+}

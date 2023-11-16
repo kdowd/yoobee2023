@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheek & Chong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="intro-nav">
+      <div class="intro-help active"><p class="help-text">HELP</p></div>
+      <div class="dropdown">
+        <div class="dropdown-text">LANGUAGE</div>
+        <div class="dropdown-content">
+          <a href="./index.html">English</a>
+          <a href="./index-maori.html">Te reo Māori</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-main">
+      <div class="white-box">
+        <img class="logo-intro" src="./images/logo-green.png" alt="logo" />
+      </div>
+    </div>
+
+    <div class="intro-text">
+      <p class="header">Welcome to Cheek & Chong</p>
+      <br />
+      <p>
+        Please fill in the details below to begin your digital order. You can
+        also scan the QR code on your table and order through your mobile phone.
+      </p>
+      <br />
+      <div class="table-form">
+        <form class="get-started" action="./home.html">
+          <label>Table number:</label>
+          <input
+            class="number"
+            type="text"
+            name="tablenumber"
+            placeholder="8"
+          />
+
+          <label>Name for the table (optional):</label>
+          <input
+            class="name"
+            type="text"
+            name="tablename"
+            placeholder="Rebecca"
+          />
+
+          <input
+            class="submit"
+            type="submit"
+            href="./home.html"
+            value="GET STARTED"
+          />
+        </form>
+      </div>
+      <br />
+      <p class="small-text">If you need any help please let our staff know!</p>
+    </div>
+
+    <div class="modal1 modal-hidden">
+      <div class="modal-help">
+          <div class="modal-help-text">
+          <p class="modal-header">Cheek & Chong Prototype </p>
+            
+           <p class="modal-head-under">Thank you for testing out my prototype for digital table <br>ordering at Cheek & Chong.</p>
+            <br>
+            <p class="help-sub-head"> Could you please try and complete the following
+            tasks:</p>
+            <br>
+            <p class="help-tasks">
+            1. Change the language of the application on the home page*.
+            <br>
+            2. Look at each page: starters, mains, desserts, drinks and deals.
+            <br>
+            3. Add ‘Sticky Pork Ribs’ to your order. 
+            <br>
+            4. Send your order to the kitchen and track your order. 
+            <br>
+            5. Pay for your order using the application. 
+            <br>
+            </p>
+            <p class="help-sml">
+            *Language changes will only apply to the home page of
+            the prototype.
+            </p>
+        </div>
+            <div class="form-row">
+                <button type="button" class="cancel">Close</button>
+            </div>
+        </div>
+      </div>
+
+    <script>
+      var mymodal = document.querySelector(".modal1");
+      var myactive = document.querySelector(".active");
+      var mycancelbutton = document.querySelector(".cancel");
+      myactive.addEventListener("click", onClicked);
+      function onClicked() {
+        console.log("clicked");
+        mymodal.classList.remove("modal-hidden");
+      }
+      mycancelbutton.addEventListener("click", onCancel);
+      function onCancel() {
+        console.log("cancel clicked");
+        mymodal.classList.add("modal-hidden");
+      }
+    </script>
+  </body>
+</html>

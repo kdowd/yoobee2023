@@ -1,0 +1,67 @@
+$green-color: rgb(119, 166, 130);
+$mid-green-color: rgb(72, 109, 80);
+$light-green-color: rgb(191, 218, 197);
+$dark-green-color: rgb(55, 86, 66);
+$text-grey-color: rgb(63, 63, 63);
+
+p,
+li,
+label,
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: $text-grey-color;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+a.nav {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.white {
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.white-bold {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  span {
+    font-weight: 300;
+  }
+}
+
+.order-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.deals {
+  font-size: 19px;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.header {
+  font-size: 28px;
+  font-weight: 800;
+}
+.small-text {
+  font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.change_button  {
+  
+    font-family: 'Chilanka', cursive;
+    display: flex;
+	flex-direction: row;
+	
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    
+    width: 80VW;
+    
+
+padding-top: 15%;
+
+p {
+    padding-right: 30%;
+}
+
+
+
+ 
+}
+
+.change-btn {
+    height: 20px;
+    width: 50px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: center;
+   
+    
+}

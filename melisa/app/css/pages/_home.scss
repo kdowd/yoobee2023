@@ -1,0 +1,211 @@
+$green-color: rgb(119, 166, 130);
+$mid-green-color: rgb(72, 109, 80);
+$light-green-color: rgb(191, 218, 197);
+$dark-green-color: rgb(55, 86, 66);
+$text-grey-color: rgb(63, 63, 63);
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+img {
+    display: block;
+}
+
+.main-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $green-color;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    .logo {
+        width: 70px;
+    }
+    .arrow {
+        max-width: 40px;
+    }
+}
+
+.myorder {
+    position: fixed;
+    width: 20vw;
+    max-height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $green-color;
+    z-index: 120;
+}
+
+.order {
+    background-color: $green-color;
+    .dark-green {
+        display: grid;
+        grid-template-columns: 2fr 0.3fr;
+        background-color: $mid-green-color;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }    
+    .light-green {
+        display: grid;
+        grid-template-columns: 2fr 0.3fr;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }    
+    .text {
+        grid-template-columns: 2fr;
+    }
+    .price {
+        grid-template-columns: 0.3fr;
+    }
+    .kitchen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 150px;
+        button {
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            background-color: $dark-green-color;
+            padding: 12px 18px;
+            border: 1px solid $dark-green-color;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: $text-grey-color;
+            transition: all 0.5s;
+        }
+    }
+    .order-head {
+        padding: 28.5px;
+        text-align: center;
+    }
+}
+
+.main-text {
+    margin-top: 90px;
+    max-width: 78vw;
+    text-align: center;
+    padding: 20px;
+    .header {
+        font-size: 35px;
+        line-height: 60px;
+        color: $text-grey-color;
+      }
+      p {
+          font-size: 20px;
+          color: $text-grey-color;
+      }
+}
+
+.category-header {
+    padding: 25px 25px 0px 35px;
+}
+
+.main-options {
+    max-width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px 25px;
+    grid-gap: 25px;
+    .course {
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+        border-radius: 5px;   
+        .course-img {
+            border-radius: 5px;
+            position: relative;
+            height: 100%;
+            img {
+                width: 100%;
+                border-radius: 5px;
+                display: block;
+            }
+            .course-text {
+                background-color: rgba(119, 166, 130, 0.8);
+                padding: 20px 0px;
+                border-radius: 0px 0px 5px 5px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    }  
+    
+    .course:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+        transition: all 0.1s;
+    }
+}
+
+.menu-items {
+    max-width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px;
+    grid-gap: 25px;
+    .product {
+        display: grid;
+        grid-template-columns: 1.8fr 1.2fr;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .text {
+            padding: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+        p.bold {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        p.green {
+            font-weight: 400;
+            font-size: 14px;
+            color: $green-color;
+            line-height: 24px;
+        }
+    }
+    img {
+        width: 100%; 
+        height: 100%;
+        border-radius: 0px 5px 5px 0px;
+        object-fit: cover;
+     }
+    .pro-img {
+        width: 100%; 
+        height: 100%;
+    }
+    .product:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+        transition: all 0.1s;
+    }
+}
+
+.help {
+    width: 75vw;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
