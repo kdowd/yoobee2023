@@ -13,6 +13,10 @@ body {
   padding-bottom: 10rem;
 }
 
+.wrapper{
+  margin-left: 2rem;
+}
+
 header h2 {
   text-align: center;
   font-size: 2rem;
@@ -26,15 +30,34 @@ ul {
   width: fit-content;
 }
 
+ul {
+  padding: 0;
+}
+
 ul > li {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.projects li {
+ul > li p {
+ margin:0;
+ padding: 0;
+}
+
+ 
+
+.projects {
+  display: grid;
+  gap: 4rem;
+}
+.projects li, .info  {
   font-size: 0.9rem;
   margin-bottom: 1rem;
+}
+
+.projects h2 {
+  margin: 0;
 }
 
 ul > li span {
@@ -42,6 +65,13 @@ ul > li span {
   text-decoration-color: black;
   text-decoration-thickness: 1px;
   text-underline-offset: 10px;
+}
+
+.projects > li span {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 ul > li a {
@@ -72,4 +102,12 @@ hr {
 img {
   max-width: 100%;
   display: block;
+}
+
+table{
+  width: fit-content;
+}
+
+table td {
+  min-width: 200px;
 }
