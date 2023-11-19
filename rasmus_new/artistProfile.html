@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="artistProfileStyles.css">
+    <link rel="stylesheet" href="libraryStyle.css">
+</head>
+
+<body>
+    <header>
+        <img class="bannerArt" src="Album Art/hov1.png" alt="./">
+        <img onclick="history.back()" class="backButton" src="assets/angle-small-left.png" alt="./">
+        <h1 class="NameOfArtist noMargin">Hov1</h1>
+    </header>
+
+    <div class="artistInfo">
+        <div>
+            <h6 class="paddingLeft noMargin grayText">34.633.673 monthly listeners</h6>
+        </div>
+        <div class="playShuffleFollow">
+            <div class="flexRow">
+                <div style="padding-right: 20px;">
+                    <button class="followButton" onclick="toggleText(this)">Follow</button>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img class="twentyPix" src="assets/menu-dots.png" alt="./">
+                </div>
+            </div>
+            <div>
+                <img class="thirtyPix" src="assets/shuffle.png" alt="./" onclick="toggleSelect(this)">
+                <img class="thirtyPix" src="assets/play.png" alt="./"onclick="toggleSelect(this); togglePlay()"">
+            </div>
+        </div>
+    </div>
+
+    <div class="paddingLeft">
+        <div>
+            <h3>Popular tracks</h3>
+        </div>
+
+        <div>
+            <div class="popularSongs">
+                <h6 class="numberList">1</h6>
+                <a href="musicPlayer.html">
+                    <img class="sixtypxIMG albumImage" alt="./">
+                </a>
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="amountOfPlays randomPlays"></h5>
+                </div>
+            </div>
+            <div class="popularSongs">
+                <h6 class="numberList">2</h6>
+                <a href="musicPlayer.html">
+                    <img class="sixtypxIMG albumImage" alt="./">
+                </a>
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="amountOfPlays randomPlays"></h5>
+                </div>
+            </div>
+            <div class="popularSongs">
+                <h6 class="numberList">3</h6>
+                <a href="musicPlayer.html">
+                    <img class="sixtypxIMG albumImage" alt="./">
+                </a>
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="amountOfPlays randomPlays"></h5>
+                </div>
+            </div>
+            <div class="popularSongs">
+                <h6 class="numberList">4</h6>
+                <a href="musicPlayer.html">
+                    <img class="sixtypxIMG albumImage" alt="./">
+                </a>
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="amountOfPlays randomPlays"></h5>
+                </div>
+            </div>
+            <div class="popularSongs">
+                <h6 class="numberList">5</h6>
+                <a href="musicPlayer.html">
+                    <img class="sixtypxIMG albumImage" alt="./">
+                </a>
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="amountOfPlays randomPlays"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="paddingLeft">
+        <div>
+            <h3>Discography</h3>
+        </div>
+
+        <div class="discogrpahy">
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img class="hundredpxIMG albumImage" alt="./">
+                <div>
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="yearOfRelease"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="currentPlayingBar">
+        <div class="currentPlayingLeft">
+            <a href="/musicPlayer.html">
+                <img class="musicPlaying albumImage" alt="./"> 
+            </a>
+            <span>
+                I stole this song
+                <span>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 5px;">
+            <img class="musicPlayingButton" src="assets/heart.png" alt="./"  onclick="toggleSelect(this)">
+            <img class="musicPlayingButton" src="assets/play.png" alt="./" onClick="togglePlay()">
+        </div>
+    </div>
+
+    <div class="NavBar">
+        <a href="/index.html" class="navIMG">
+            <img src="assets/home.png" alt="./">
+        </a>
+        <a href="/search.html" class="navIMG">
+            <img src="assets/search.png" alt="./">
+        </a>
+        <a href="/library.html" class="navIMG">
+            <img src="assets/music-album.png" alt="./">
+        </a>
+    </div>
+    </div>
+
+</body>
+
+<script src="https://kit.fontawesome.com/efbc88a111.js" crossorigin="anonymous"></script>
+<script src="/script.js" defer></script>
+
+</html>

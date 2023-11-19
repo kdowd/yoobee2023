@@ -1,0 +1,53 @@
+.mainImage
+{
+    height: 100px;
+    width: 100px;
+}
+.mainImageDisplay
+{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 50px;
+}
+.goBack
+{
+    position: fixed;
+    height: 30px;
+    top: 20px;
+    left: 15px;
+}
+.meatBalls
+{   
+    padding-left: 20px;
+    height: 15px;
+}
+.userIconRaz
+{
+    height: 15px;
+    padding-left: 10px;
+}
+.SmallImages
+{
+    padding-top: 10px;
+    display: flex; 
+    align-items: center;
+    padding-bottom: 20px;
+}
+.addSongs
+{
+    padding-left: 10px;
+    height: 60px;
+    padding-bottom: 10px;
+}
+.addInfo
+{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.songInList
+{
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

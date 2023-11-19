@@ -1,0 +1,82 @@
+.overlay 
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+  }
+  .text 
+  {
+    color: rgb(33, 33, 33);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Inter Tight', sans-serif;
+  }
+  .grid-item:nth-child(8n + 1) .overlay 
+  {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  .grid-item:nth-child(8n + 2) .overlay 
+  {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+  .grid-item:nth-child(8n + 3) .overlay 
+  {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  .grid-item:nth-child(8n + 4) .overlay 
+  {
+    background-color: rgba(255, 255, 0, 0.5);
+  }
+  .grid-item:nth-child(8n + 5) .overlay 
+  {
+    background-color: rgba(255, 0, 255, 0.5);
+  }
+  .grid-item:nth-child(8n + 6) .overlay 
+  {
+    background-color: rgba(0, 255, 255, 0.5);
+  }
+  .grid-item:nth-child(8n + 7) .overlay 
+  {
+    background-color: rgba(7, 112, 5, 0.5);
+  }
+  .grid-item:nth-child(8n) .overlay 
+  {
+    background-color: rgba(252, 64, 4, 0.5);
+  }
+  .overlay, .text 
+  {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .grid-item:hover .overlay,
+  .grid-item:hover .text 
+  {
+    opacity: 0.8;
+  }
+  .grid-item
+  {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .grid-container
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .imageSize
+  {
+    height: 120px;
+    width: 192px;
+  }

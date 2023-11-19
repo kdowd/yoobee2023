@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html 
+{
+    overflow-x: hidden;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    padding-bottom: 110px;
+    overflow-y: scroll;   
+    background-color: black;
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 500;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+/* Header stuff */
+header
+{
+    display: grid;
+    grid-template-columns: 2fr 0fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.headIcon
+{
+    height: 25px;
+}
+.gapIcon
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+/*Stories stuff lol*/
+.marginFive
+{
+    margin-block: 10px;
+}
+.paddingStuff
+{
+    padding-left: 10px;
+}
+.fifpxIMG
+{
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+.storyMusic
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.storyMusic::-webkit-scrollbar
+{
+    display: none;
+}
+/*Recentplayed*/
+.recentPlay
+{
+    padding-right: 10px;
+}
+.recentSpaced
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.recentSpaced > p 
+{
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.recentSpaced > p > img 
+{
+    margin-right: 10px;
+}
+.recentSpaced > p > span 
+{
+    flex-wrap: break-word;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/*Big songs*/
+.onefifpxIMG
+{
+    padding-left: 10px;
+    height: 150px;
+    width: 150px;
+}
+.PlaylistIMG
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.PlaylistIMG::-webkit-scrollbar
+{
+    display: none;
+}
+/*Navigation Bar at le buttom*/
+.NavBar
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.navIMG 
+{
+    display: flex;
+    align-items: center;
+}
+.navIMG img
+{
+    height: 30px;
+    width: 30px;
+}
+/*Current music playing*/
+.musicPlaying
+{
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+.currentPlayingBar
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.currentPlayingLeft
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.musicPlayingButton
+{
+    height: 30px;
+    width: 30px;
+}
+.selected
+{
+    filter: invert(41%) sepia(68%) saturate(6888%) hue-rotate(2deg)
+    brightness(104%) contrast(98%);
+}

@@ -1,0 +1,49 @@
+body
+{
+    padding: 0 !important;
+}
+.coverImage
+{
+    height: 896px;
+    position: fixed;
+    left: -250px;
+}
+.thirtypxIMG
+{
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.size
+{
+    height: 50px;
+}
+.musicButtons
+{
+    position: absolute;
+    display: flex; 
+    height: 896px; 
+    align-items: center; 
+    justify-content: space-between; 
+    right: 20px;
+    left: 20px;
+}
+.waveformContainer
+{
+    position: fixed;
+    bottom: 200px;
+    overflow-x: scroll;
+    left: 0;
+    right: 0;
+}
+.waveformContainer img
+{
+    width: 800px;
+    height: 80px;
+    padding: 0 50%;
+}
+.waveformContainer::-webkit-scrollbar
+{
+    display: none;
+}

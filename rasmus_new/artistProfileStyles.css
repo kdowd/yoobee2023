@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+    width: 414px;
+    margin: 0px;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+header
+{
+    height: 414px;
+    background: rgb(0,0,0);
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+    padding: 0 !important;
+}
+.twentyPix
+{
+    color: gray;
+    height: 20px;
+}
+.backButton
+{
+    position:absolute;
+    height: 30px;
+    top: 20px;
+    left: 15px;
+}
+.bannerArt
+{
+    display: block;
+    width: 100%;
+    height: 414px;
+    object-fit: cover;
+}
+.paddingLeft
+{
+    padding-left: 10px;
+}
+.artistInfo
+{
+    display: flex;
+    padding-right: 10px;
+    flex-direction: column;
+    
+}
+.noMargin
+{
+    margin-block-start: 2.5px;
+    margin-block-end: 2.5px;
+}
+.NameOfArtist
+{
+    position: absolute;
+    padding-left: 10px;
+    top: 370px;
+}
+.grayText
+{
+    color: rgb(169, 169, 169);
+}
+.flexRow
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.followButton
+{
+    font-family: 'Inter Tight', sans-serif;
+    background: transparent;
+    color: white;
+    display: block;
+    border-radius: calc(20px);
+    height: 30px;
+    width: 100px;
+    border: 2px solid white;
+
+}
+.playShuffleFollow
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+}
+.thirtyPix
+{
+    height: 30px;
+}
+.sixtypxIMG
+{
+    height: 60px;
+    width: 60px;
+}
+.popularSongs
+{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.numberList
+{
+    width: 5px;
+}
+.amountOfPlays
+{
+    color: gray;
+    margin-block-start: 2.5px;
+    margin-block-end: 2.5px;
+}
+.discogrpahy
+{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding-right: 10px;
+    gap: 10px;
+}
+.hundredpxIMG
+{
+    height: 100px;
+}
+.yearOfRelease
+{
+    color: #FF5500;
+    margin-block-start: 2.5px;
+    margin-block-end: 2.5px;
+}

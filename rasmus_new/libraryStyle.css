@@ -1,0 +1,137 @@
+/* Header stuff */
+header
+{
+    display: grid;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-template-columns: none;
+    justify-content: normal;
+}
+.userIc
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.extraHead
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/**//**//**//**/
+.librarySongs
+{
+    padding-left: 10px;
+    height: 40px;
+    display: block;
+    margin-block-end: 0;
+
+}
+.librarySort
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+}
+.onehunIMG
+{
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+.albumsList
+{
+display: flex;
+flex-direction: column;
+}
+.moreButton
+{
+    height: 20px;
+}
+.songInfo
+{
+    display: grid;
+    grid-template-columns: 0.5fr 2.25fr 0.25fr;
+    align-items: center;
+}
+.textGapNO
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nameOfSong
+{
+    margin: 0;
+}
+.artistName
+{
+    margin: 0;
+}
+.followers
+{
+    margin: 0;
+    color: gray;
+}
+.timeStamp
+{
+    margin: 0;
+    color: gray;
+}
+.spacingMan
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 40px ;
+}
+.spacingManWhut
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 40px ;
+    padding-top: 10px;
+}
+.onefifpxIMGCenter
+{
+    padding-left: 10px; 
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.columnForce
+{
+    display: flex; 
+    flex-direction: column; 
+    align-content: center;
+}
+.tinyIcon
+{
+    height: 20px;
+}
+.superTinyIcon
+{
+    height: 10px;
+}
+.weirdSuperTinyIcon
+{
+    height: 15px;
+}
+.flexyBoy
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

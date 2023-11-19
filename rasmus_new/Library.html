@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="libraryStyle.css">
+</head>
+<body>
+    
+    <header>
+        <div class="extraHead">
+            <div class="userIc">
+                <p>
+                    <img class="headIcon" src="assets/user.png" alt="./">
+                    <h2>YOUR LIBRARY</h2>
+                </p>
+            </div>
+            <div >
+            </div>
+            <div class="gapIcon">
+                <img class="headIcon" style="height: 27px;" src="assets/chromecast.png" alt="./">
+                <img class="headIcon" src="assets/envelope.png" alt="./">
+                <a href="/settings.html" >
+                    <img class="headIcon" src="assets/user.png" alt="./">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div>
+            <h3 class="librarySort">
+                LIKED TRACKS
+                <img class="moreButton" src="assets/angle-small-right.png" alt="./"> 
+            </h3>
+        </div>
+        <div>
+            <h3 class="librarySort">
+                DISCOVER WEEKLY
+                <img class="moreButton" src="assets/angle-small-right.png" alt="./"> 
+            </h3>
+        </div>
+        <div>
+            <h3 class="librarySort">
+                FOLLOWING
+                <img class="moreButton" src="assets/angle-small-right.png" alt="./"> 
+            </h3>
+        </div>
+        <div>
+            <h3 class="librarySort">
+                NEW EPISODES
+                <img class="moreButton" src="assets/angle-small-right.png" alt="./"> 
+            </h3>
+        </div>
+        <div>
+            <h3 class="librarySort">
+                RADIO
+                <img class="moreButton" src="assets/angle-small-right.png" alt="./"> 
+            </h3>
+        </div>
+    </div>
+    <div class="columnForce">
+        <div class="spacingMan">
+            <h2>RECENTLY PLAYED ARTIST </h2>
+            <h6>See all</h6>
+        </div
+        
+        <a href="/artistProfile.html" >
+            <img class="onefifpxIMG albumImage" alt="./">
+        </a>
+        <h5 class="onefifpxIMGCenter artistName"></h5>
+        <h5 class="onefifpxIMGCenter followers"></h5>
+        
+    </div>
+
+    <div>
+        <div class="columnForce">
+            <div class="spacingManWhut librarySongs">
+                <h2>RECENTLY PLAYED </h2>
+                <h6>See all</h6>
+            </div>
+        </div>
+        <div class="albumsList">
+            <span class="songInfo"> 
+                <img class="onehunIMG albumImage" alt="./">
+                <div class="textGapNO">
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="artistName"></h5>
+                    <span class="flexyBoy">
+                        <img class="superTinyIcon" src="assets/play-gray.png" alt="./">
+                        <h5 class="LikeThePlays timeStamp"></h5>
+                    </span>
+                </div>
+                <img class="tinyIcon" src="assets/menu-dots.png" alt="./">
+            </span>
+            <span class="songInfo"> 
+                <img class="onehunIMG albumImage" alt="./">
+                <div class="textGapNO">
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="artistName"></h5>
+                    <span class="flexyBoy">
+                        <img class="superTinyIcon" src="assets/play-gray.png" alt="./">
+                        <h5 class="LikeThePlays timeStamp"></h5>
+                    </span>
+                </div>
+                <img class="tinyIcon" src="assets/menu-dots.png" alt="./">
+            </span>
+            <span class="songInfo"> 
+                <img class="onehunIMG albumImage" alt="./">
+                <div class="textGapNO">
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="artistName"></h5>
+                    <span class="flexyBoy">
+                        <img class="superTinyIcon" src="assets/play-gray.png" alt="./">
+                        <h5 class="LikeThePlays timeStamp"></h5>
+                    </span>
+                </div>
+                <img class="tinyIcon" src="assets/menu-dots.png" alt="./">
+            </span>
+            <span class="songInfo"> 
+                <img class="onehunIMG albumImage" alt="./">
+                <div class="textGapNO">
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="artistName"></h5>
+                    <span class="flexyBoy">
+                        <img class="superTinyIcon" src="assets/play-gray.png" alt="./">
+                        <h5 class="LikeThePlays timeStamp"></h5>
+                    </span>
+                </div>
+                <img class="tinyIcon" src="assets/menu-dots.png" alt="./">
+            </span>
+            <span class="songInfo"> 
+                <img class="onehunIMG albumImage" alt="./">
+                <div class="textGapNO">
+                    <h5 class="nameOfSong"></h5>
+                    <h5 class="artistName"></h5>
+                    <span class="flexyBoy">
+                        <img class="superTinyIcon" src="assets/play-gray.png" alt="./">
+                        <h5 class="LikeThePlays timeStamp"></h5>
+                    </span>
+                </div>
+                <img class="tinyIcon" src="assets/menu-dots.png" alt="./">
+            </span>
+        </div>
+    </div>
+
+
+    <div class="currentPlayingBar">
+        <div class="currentPlayingLeft">
+            <a href="/musicPlayer.html">
+                <img class="musicPlaying albumImage" alt="./"> 
+            </a>
+            <span>
+                I stole this song
+            <span>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 5px;">
+            <img class="musicPlayingButton" src="assets/heart.png" alt="./"  onclick="toggleSelect(this)">
+            <img class="musicPlayingButton" src="assets/play.png" alt="./" onClick="togglePlay()" id="playButton">
+        </div>
+    </div>
+
+    <div class="NavBar">
+        <a href="/index.html" class="navIMG">
+            <img src="assets/home.png" alt="./">
+        </a>
+        <a href="/search.html" class="navIMG">
+            <img src="assets/search.png" alt="./">
+        </a>
+        <a href="/Library.html" class="navIMG">
+            <img src="assets/music-album.png" alt="./">
+        </a>
+    </div>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>

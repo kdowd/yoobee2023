@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="searchSpicy.css">
+    <link rel="stylesheet" href="libraryStyle.css">
+</head>
+<body>
+
+    <div class="darkgrayPart" style="background-color: rgb(41, 41, 41); margin-top: 0;">
+        
+        <div class="searchBar">
+            <img class="searchIcon" src="assets/search-bar.png" alt="./">
+            <a class="searchBox"><input placeholder="What do you want to listen too?" autofocus></a>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="padding-left: 10px;margin-block-start: 0;padding-top: 10px;margin-block-end: 10px;">RECENT SEARCHES</h4>
+    </div>
+
+
+    <div class="albumsList">
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+        <span class="songInfo"> 
+            <img class="onehunIMG albumImage" alt="./">
+            <div class="textGapNO">
+                <h5 class="nameOfSong"></h5>
+                <h5 class="madeByWho"></h5>
+            </div>
+            <img class="weirdSuperTinyIcon" src="assets/close.png" alt="./">
+        </span>
+    </div>  
+
+<div class="currentPlayingBar">
+    <div class="currentPlayingLeft">
+        <img class="musicPlaying albumImage" alt="./"> 
+        <span>
+            I stole this song, or did i really do it?
+        <span>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 5px;">
+        <img class="musicPlayingButton" src="assets/heart.png" alt="./"  onclick="toggleSelect(this)">
+        <img class="musicPlayingButton" src="assets/play.png" alt="./" onClick="togglePlay()">
+    </div>
+</div>
+
+<div class="NavBar">
+    <a href="/index.html" class="navIMG">
+        <img src="assets/home.png" alt="./">
+    </a>
+    <a href="/search.html" class="navIMG">
+        <img src="assets/search.png" alt="./">
+    </a>
+    <a href="/Library.html" class="navIMG">
+        <img src="assets/music-album.png" alt="./">
+    </a>
+</div>
+
+</body>
+
+<script src="https://kit.fontawesome.com/efbc88a111.js" crossorigin="anonymous"></script>
+<script src="/script.js" defer></script>
+</html>
