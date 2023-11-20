@@ -1,4 +1,4 @@
-const audio = new Audio("/sounds/Mina områden.mp3");
+const audio = new Audio("./sounds/Mina områden.mp3");
 
 function togglePlay() 
 {
@@ -45,7 +45,7 @@ const thumbnails = [
 
 document.querySelectorAll(".albumImage").forEach(element => {
     const index = Math.floor(Math.random() * thumbnails.length);
-    element.src = "/Album Art/" + thumbnails[index];
+    element.src = "./Album Art/" + thumbnails[index];
 });
 
 const nameDesc = [
@@ -137,7 +137,7 @@ const playAndLikes = [
 
 document.querySelectorAll(".LikeThePlays").forEach(element => {
     const index = Math.floor(Math.random() * playAndLikes.length);
-    element.src = "/Album Art/" + playAndLikes[index];
+    element.src = "./Album Art/" + playAndLikes[index];
 });
 
 function randomFollowers() {
@@ -221,7 +221,8 @@ document.querySelectorAll(".yearOfRelease").forEach(element => {
 const img = document.getElementById('musicPlayerButton');
 
 let toggleMusicPlayButton = true;
-img.addEventListener('click', function()
+if (img) { 
+    img.addEventListener('click', function()
 {
     toggleMusicPlayButton = !toggleMusicPlayButton;
     if(toggleMusicPlayButton)
@@ -235,3 +236,4 @@ img.addEventListener('click', function()
     console.log("toggleplay");
     
 })
+}

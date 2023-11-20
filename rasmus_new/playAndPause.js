@@ -1,17 +1,20 @@
-const img = document.getElementById('playButton');
+const img2 = document.getElementById('playButton');
 let togglePlayButton = true;
-img.addEventListener('click', function()
+if (img2) {
+    img2.addEventListener('click', function()
 {
     togglePlayButton = !togglePlayButton;
     if(togglePlayButton)
     {
-        img.src = 'assets\\play.png';
+        img2.src = 'assets\\play.png';
     }
     else
     {
-        img.src = 'assets\\pause.png';
+        img2.src = 'assets\\pause.png';
     }
     
 })
+
+}
 
 

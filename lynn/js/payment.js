@@ -5,9 +5,11 @@ var submitData = {
     expDate: "",
     cvv: ""
 };
+
 var mySubmit = paymentPage.querySelector("#payment-btn");
 var checkNum = "";
 var inputNum = document.querySelector("#ccNum");
+
 inputNum.addEventListener("input", function() {
 
     mySubmit.classList.add("disable-btn");
